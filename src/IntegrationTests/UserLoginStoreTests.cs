@@ -19,7 +19,7 @@
 			manager.AddLogin(user.Id, login);
 
 			var savedLogin = Users.FindAll().Single().Logins.Single();
-			Expect(savedLogin.LoginProvider, Is.EqualTo("provider"));
+			Expect(savedLogin.LoginProvider, Is.EqualTo("Notprovider"));
 			Expect(savedLogin.ProviderKey, Is.EqualTo("key"));
 		}
 
